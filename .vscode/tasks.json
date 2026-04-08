@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build crow app",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "main.cpp",
+        "-o", "app.exe",
+        "-I", "C:/dev/vcpkg/installed/x64-mingw-static/include",
+        "-lws2_32",
+        "-lmswsock",
+        "-lpthread",
+        "-std=c++17"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
